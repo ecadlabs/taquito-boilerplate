@@ -1,0 +1,34 @@
+{
+  "name": "taquito-boilerplate-app",
+  "version": "1.0.0",
+  "description": "A boilerplate app for creating a DApp using Taquito",
+  "main": "index.js",
+  "scripts": {
+    "watch": "parcel src/index.html",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && parcel build ./src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecadlabs/taquito-boilerplate-app.git"
+  },
+  "keywords": [
+    "tezos",
+    "taquito",
+    "ts",
+    "typescript",
+    "dapp",
+    "blockchain"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@taquito/taquito": "^4.1.0-beta.3",
+    "@types/jquery": "^3.3.31",
+    "jquery": "^3.4.1",
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {}
+}

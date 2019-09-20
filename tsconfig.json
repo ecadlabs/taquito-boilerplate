@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "outDir": "dist",
+    "strict": true
+  },
+
+  "include": ["src/**/*.ts"]
+}
