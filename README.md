@@ -1,5 +1,7 @@
 # taquito-boilerplate
 
+![Built with Taquito][logo]
+
 A minimal framework-agnostic setup for starting developing Tezos DApps quickly with Taquito.
 
 ## Dependencies
@@ -23,3 +25,5 @@ A minimal framework-agnostic setup for starting developing Tezos DApps quickly w
     `npm run watch`
 
 6. Open http://localhost:1234 in your browser to see a sample application.
+
+[logo]: https://raw.githubusercontent.com/ecadlabs/taquito-boilerplate/master/assets/built-with-taquito.png "Built with Taquito"

@@ -32,6 +32,13 @@ h1 {
   padding: 20px;
 }
 
+#footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 500px;
+  padding-top: 20px;
+}
+
 #balance-form {
   display: flex;
   justify-content: space-between;
