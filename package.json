@@ -24,11 +24,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@taquito/taquito": "^4.1.0-beta.3",
+    "@taquito/taquito": "^5.1.0-beta.1",
     "@types/jquery": "^3.3.31",
     "jquery": "^3.4.1",
-    "parcel-bundler": "^1.12.3",
-    "typescript": "^3.6.3"
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.6.4"
   },
   "dependencies": {}
 }
