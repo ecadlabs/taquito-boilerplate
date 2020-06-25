@@ -5,7 +5,7 @@ export class App {
   private tk: TezosToolkit = Tezos;
 
   constructor() {
-    this.tk.setProvider({ rpc: 'https://rpc.tezrpc.me' });
+    this.tk.setProvider({ rpc: 'https://api.tez.ie/rpc/mainnet' });
   }
 
   public initUI() {
