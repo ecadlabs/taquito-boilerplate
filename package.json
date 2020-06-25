@@ -21,8 +21,8 @@
     "dapp",
     "blockchain"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "ECAD Labs Inc.",
+  "license": "MIT",
   "devDependencies": {
     "@taquito/taquito": "^6.3.2-beta.0",
     "@types/jquery": "^3.5.0",
