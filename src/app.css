@@ -39,9 +39,10 @@ h1 {
   padding-top: 20px;
 }
 
-#balance-form {
+#balance-form,
+#increment-decrement__buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #address-input {
@@ -53,7 +54,7 @@ h1 {
   border-radius: 3px;
 }
 
-#show-balance-button {
+.button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,17 +67,16 @@ h1 {
   transition: background 0.3s, color 0.3s;
 }
 
-#show-balance-button:hover {
+.button:hover {
   background: #35636e;
   color: white;
 }
 
 #balance-output {
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   height: 50px;
   margin-top: 20px;
-  font-size: 48px;
+  font-size: 25px;
   color: #333;
 }
 
@@ -90,10 +90,40 @@ h1 {
   background: rgba(199, 61, 24, 0.3);
 }
 
-.show {
+#current-value {
+  text-align: center;
+  font-size: 25px;
+}
+
+#loading__items {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.show {
+  display: block !important;
 }
 
 .hide {
-  display: none;
+  display: none !important;
+}
+
+.loader {
+  border: 3px solid #f3f3f3; /* Light grey */
+  border-top: 3px solid #35636e; /* Blue */
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

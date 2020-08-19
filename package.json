@@ -30,5 +30,8 @@
     "parcel-bundler": "^1.12.4",
     "typescript": "^3.9.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@taquito/tezbridge-wallet": "^6.3.5-beta.0",
+    "@thanos-wallet/dapp": "^0.6.0"
+  }
 }

@@ -7,24 +7,44 @@
   <body>
     <h1>Taquito Boilerplate App</h1>
     <div id="dialog">
-      <div id="header">Show Balance</div>
+      <div id="header">
+        <span id="header__connect-wallet">Connect your wallet</span>
+        <span id="header__interact-with-contract" class="hide"
+          >Increment or decrement the counter</span
+        >
+      </div>
       <div id="content">
         <div id="balance-form">
-          <input
-            id="address-input"
-            type="text"
-            id="address"
-            placeholder="Enter wallet address"
-          />
-          <a id="show-balance-button" href="#">Show</a>
+          <a class="button" href="#" id="connect-tezbridge">Tezbridge</a>
+          <a class="button" href="#" id="connect-thanos">Thanos</a>
+        </div>
+        <div id="increment-decrement" class="hide">
+          <p id="current-value">
+            Current counter: <span id="counter-value"></span>
+          </p>
+          <div id="increment-decrement__buttons">
+            <a href="#" class="button" id="increment-counter">Increment by 1</a>
+            <a href="#" class="button" id="decrement-counter">Decrement by 1</a>
+          </div>
+        </div>
+        <div id="loading" class="hide">
+          <div id="loading__items">
+            <br />
+            <div>Loading, please wait</div>
+            <br />
+            <div class="loader"></div>
+          </div>
         </div>
         <div id="error-message" class="hide"></div>
-        <div id="balance-output" class="show"><span id="balance">0</span>ꜩ</div>
+        <div id="balance-output" class="show">
+          <span> Balance: <span id="balance">0</span> ꜩ </span>
+        </div>
       </div>
     </div>
     <div id="footer">
       <img src="../assets/built-with-taquito.png" />
     </div>
     <script src="main.ts"></script>
+    <script src="https://www.tezbridge.com/plugin.js"></script>
   </body>
 </html>
