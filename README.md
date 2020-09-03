@@ -1,8 +1,10 @@
-# taquito-boilerplate
+# Taquito boilerplate
 
 ![Built with Taquito][logo]
 
 A minimal framework-agnostic setup for starting developing Tezos DApps quickly with Taquito.
+
+> If you are looking for the React template, please follow [this link](https://github.com/ecadlabs/taquito-react-template).
 
 ## Dependencies
 1. jQuery - for simple manipulation and traversal of HTML documents.
