@@ -1,43 +1,37 @@
-import { Tezos, TezosToolkit } from '@taquito/taquito';
-import $ from 'jquery';
+import { TezosToolkit } from "@taquito/taquito";
+import $ from "jquery";
 
 export class App {
-  private tk: TezosToolkit = Tezos;
+  private tk: TezosToolkit;
 
   constructor() {
-    this.tk.setProvider({ rpc: 'https://api.tez.ie/rpc/mainnet' });
+    this.tk = new TezosToolkit("https://api.tez.ie/rpc/mainnet");
   }
 
   public initUI() {
-    $('#show-balance-button').bind('click', () =>
-      this.getBalance($('#address-input').val())
+    $("#show-balance-button").bind("click", () =>
+      this.getBalance($("#address-input").val())
     );
   }
 
   private showError(message: string) {
-    $('#balance-output')
+    $("#balance-output").removeClass().addClass("hide");
+    $("#error-message")
       .removeClass()
-      .addClass('hide');
-    $('#error-message')
-      .removeClass()
-      .addClass('show')
-      .html('Error: ' + message);
+      .addClass("show")
+      .html("Error: " + message);
   }
 
   private showBalance(balance: number) {
-    $('#error-message')
-      .removeClass()
-      .addClass('hide');
-    $('#balance-output')
-      .removeClass()
-      .addClass('show');
-    $('#balance').html(balance);
+    $("#error-message").removeClass().addClass("hide");
+    $("#balance-output").removeClass().addClass("show");
+    $("#balance").html(balance);
   }
 
   private getBalance(address: string) {
     this.tk.rpc
       .getBalance(address)
       .then(balance => this.showBalance(balance.toNumber() / 1000000))
-      .catch(e => this.showError('Address not found'));
+      .catch(e => this.showError("Address not found"));
   }
 }
