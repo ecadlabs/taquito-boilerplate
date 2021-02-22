@@ -24,12 +24,12 @@
   "author": "ECAD Labs Inc.",
   "license": "MIT",
   "devDependencies": {
-    "@types/jquery": "^3.5.0",
+    "@types/jquery": "^3.5.5",
     "jquery": "^3.5.1",
     "parcel-bundler": "^1.12.4",
-    "typescript": "^3.9.5"
+    "typescript": "^4.1.5"
   },
   "dependencies": {
-    "@taquito/taquito": "^7.1.0-beta.0"
+    "@taquito/taquito": "^8.0.3-beta.0"
   }
 }
