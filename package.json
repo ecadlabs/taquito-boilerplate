@@ -30,6 +30,6 @@
     "typescript": "^4.1.5"
   },
   "dependencies": {
-    "@taquito/taquito": "^8.0.3-beta.0"
+    "@taquito/taquito": "^10.2.0"
   }
 }
